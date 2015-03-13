@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -88,11 +87,11 @@ h1, h2, h3, h4, h5, h6 {
 #headerwrap {
 	background: url(../img/background.jpg) no-repeat center top;
 	margin-top: 0px;
-	padding-top: 0px;
+	padding-top: 50px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
+	min-height: 800px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -111,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
-	font-size: 65px;
+	font-size: 55px;
 	font-weight: bold;
 }
 
