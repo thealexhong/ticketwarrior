@@ -59,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-brand {
 	font-weight: 700;
+color: #f1c40f;
+    text-decoration: none;
 }
 
 .navbar-default .navbar-brand {
