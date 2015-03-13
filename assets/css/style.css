@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Jolly+Lodger:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 ::-moz-selection {
     background: #f2c2c9;
@@ -89,7 +91,7 @@ color: #f1c40f;
 #headerwrap {
 	background: url(../img/background.jpg) no-repeat center top;
 	margin-top: 0px;
-	padding-top: 50px;
+	padding-top: 20px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -108,18 +110,20 @@ color: #f1c40f;
 }
 
 #headerwrap h1 {
+  font-family: 'Jolly Lodger', cursive;
 	color:#FFFFFF;
-	padding-top: 10px;
+	padding-top: 0px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
-	font-size: 55px;
+	font-size: 75px;
 	font-weight: bold;
 }
 
 #headerwrap h4 {
-  font-size: 24px;
-	font-weight: 400;
-  padding-bottom: 100px;
+  font-family: 'Roboto', cursive;
+  font-size: 25px;
+	font-weight: 20;
+  padding-bottom: 80px;
 	color: #ffffff
 }
 
