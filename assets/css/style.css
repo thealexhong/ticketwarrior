@@ -233,7 +233,7 @@ a:hover {
 }
 
 #aboutwrap h1 {
-	color:#FFFFFF;
+	color:#ffffff;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
@@ -261,4 +261,26 @@ a:hover {
 	background:#fff;
 	clear:left;
 	font-size: 14px;
+}
+
+#mc_embed_signup input.email {
+	font-family: 'Ubuntu', Lato;
+	font-size: 20px;
+	margin: auto;
+	margin-bottom: 10px;
+	text-indent: 10px;
+	width: 50%;
+}
+
+#mc_embed_signup input.button {
+	font-family: 'Ubuntu', Lato;
+	font-size: 20px;
+	margin: auto;
+}
+
+@media (max-width: 767px) {
+	#mc_embed_signup input.email,
+	#mc_embed_signup input.button {
+		width: 100%;
+	}
 }
