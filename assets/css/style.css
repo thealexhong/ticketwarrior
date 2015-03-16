@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Jolly+Lodger:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 ::-moz-selection {
     background: #f2c2c9;
@@ -89,13 +91,12 @@ color: #f1c40f;
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/background.jpg) no-repeat center top;
+	/*background: url(../img/background.jpg) no-repeat center top;*/
 	margin-top: 0px;
 	padding-top: 20px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 800px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -110,21 +111,19 @@ color: #f1c40f;
 }
 
 #headerwrap h1 {
-  font-family: 'Jolly Lodger', cursive;
-	color:#FFFFFF;
-	padding-top: 0px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
+	color: #333333;
+	font-family: 'Ubuntu', Lato;
 	font-size: 75px;
 	font-weight: bold;
+	margin-top: 10px;
 }
 
 #headerwrap h4 {
-  font-family: 'Roboto', cursive;
-  font-size: 25px;
-	font-weight: 20;
-  padding-bottom: 80px;
-	color: #ffffff
+	font-family: 'Ubuntu', Lato;
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 80px;
+	color: #333333;
 }
 
 #headerwrap i:hover {
@@ -137,36 +136,31 @@ color: #f1c40f;
   color: #ffffff
 }
 
-#social {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #f2f2f2;
-}
-
-#social i {
-	font-size: 40px;
+.social-media i {
 	color: #4a4a4a
 }
 
-#social i:hover {
+.social-media i:hover {
 	color: #1abc9c
 }
 
 #footerwrap {
-	padding-top: 70px;
-	padding-bottom: 50px;
 	background-color: #2f2f2f;
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #footerwrap p {
 	color: #f2f2f2;
-	margin-left: 10px;
+	margin: auto;
 }
 
 a {
     color: #ffffff;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }
 
@@ -260,4 +254,11 @@ a:hover{
 
 .gallery img:hover {
 	opacity: 0.4;
+}
+
+/*MailChimp*/
+#mc_embed_signup {
+	background:#fff;
+	clear:left;
+	font-size: 14px;
 }
