@@ -1,1 +1,1 @@
-[Ticket Warrior](ticketwarrior.me)
+[Ticket Warrior](http://ticketwarrior.me)
