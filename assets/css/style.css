@@ -33,12 +33,24 @@
 	text-align: center
 }
 
-.mt {
+.left {
+	text-align: left;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.mt50 {
+	margin-top: 50px;
+}
+
+.mt80 {
 	margin-top: 80px;
 }
 
-.mb {
-	margin-bottom: 80px;
+.mb50 {
+	margin-bottom: 50px;
 }
 
 /* ==========================================================================
@@ -47,7 +59,8 @@
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-family: 'Ubuntu', Lato;
     font-weight: 400;
     font-size: 16px;
 
@@ -57,13 +70,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-    color: #4a4a4a;
 }
 
 
 .navbar-brand {
 	font-weight: 700;
-color: #f1c40f;
+	color: #f1c40f;
     text-decoration: none;
 }
 
@@ -91,7 +103,7 @@ color: #f1c40f;
    ========================================================================== */
 
 #headerwrap {
-	/*background: url(../img/background.jpg) no-repeat center top;*/
+	background: url(../img/background.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top: 20px;
 	text-align:center;
@@ -111,19 +123,20 @@ color: #f1c40f;
 }
 
 #headerwrap h1 {
-	color: #333333;
 	font-family: 'Ubuntu', Lato;
 	font-size: 75px;
 	font-weight: bold;
 	margin-top: 10px;
 }
 
+#headerwrap h2 {
+	width: 100%;
+}
+
 #headerwrap h4 {
 	font-family: 'Ubuntu', Lato;
 	font-size: 25px;
 	font-weight: bold;
-	padding-bottom: 80px;
-	color: #333333;
 }
 
 #headerwrap i:hover {
@@ -134,6 +147,24 @@ color: #f1c40f;
   font-weight: 400;
   padding-bottom: 15px;
   color: #ffffff
+}
+
+.title-wrap {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	width: 900px;
+}
+
+.how-it-works-wrap {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	width: 620px;
 }
 
 .social-media i {
@@ -258,8 +289,7 @@ a:hover {
 
 /*MailChimp*/
 #mc_embed_signup {
-	background:#fff;
-	clear:left;
+	clear: left;
 	font-size: 14px;
 }
 
@@ -273,9 +303,16 @@ a:hover {
 }
 
 #mc_embed_signup input.button {
+	background: #e31e26 !important;
 	font-family: 'Ubuntu', Lato;
 	font-size: 20px;
+	height: auto !important;
 	margin: auto !important;
+	padding: auto !important;
+}
+
+#mc_embed_signup input.button:hover {
+	background: #bb171e !important;
 }
 
 @media (max-width: 767px) {
