@@ -5,12 +5,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 ::-moz-selection {
-    background: #BA9EB0;
+    background: #a8d1ff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #BA9EB0;
+    background: #a8d1ff;
     text-shadow: none;
 }
 
@@ -89,6 +89,12 @@ a:focus {
 	color: #fff;
 	text-decoration: none;
 }
+
+a:hover {
+    color: #e8e53d;
+    text-decoration: none;
+}
+
 .navbar-brand {
 	font-weight: 700;
 	color: #f1c40f;
@@ -187,7 +193,7 @@ a:focus {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px;
-	width: 620px;
+	width: 670px;
 }
 
 .social-media i {
