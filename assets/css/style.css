@@ -294,21 +294,24 @@ a:hover {
 }
 
 #mc_embed_signup input.email {
+	border-radius: 5px;
 	font-family: 'Ubuntu', Lato;
 	font-size: 20px;
 	margin: auto !important;
 	margin-bottom: 10px !important;
 	text-indent: 10px !important;
-	width: 50% !important;
+	width: 600px !important;
 }
 
 #mc_embed_signup input.button {
 	background: #e31e26 !important;
+	border-radius: 5px;
 	font-family: 'Ubuntu', Lato;
 	font-size: 20px;
 	height: auto !important;
 	margin: auto !important;
-	padding: auto !important;
+	padding: 10px !important;
+	width: 250px !important;
 }
 
 #mc_embed_signup input.button:hover {
