@@ -6,13 +6,11 @@
 
 ::-moz-selection {
     background: #f2c2c9;
-    color: #a4003a;
     text-shadow: none;
 }
 
 ::selection {
     background: #16a085;
-    color: #a4003a;
     text-shadow: none;
 }
 
@@ -37,8 +35,20 @@
 	text-align: left;
 }
 
+.right {
+	text-align: right;
+}
+
 .middle {
 	vertical-align: middle;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt30 {
+	margin-top: 30px;
 }
 
 .mt50 {
@@ -57,7 +67,6 @@
    General styles
    ========================================================================== */
 
-
 body {
     color: #fff;
     font-family: 'Ubuntu', Lato;
@@ -71,7 +80,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
-
 
 .navbar-brand {
 	font-weight: 700;
@@ -103,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/background.jpg) no-repeat center top;
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/background.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top: 20px;
 	text-align:center;
@@ -126,10 +134,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', Lato;
 	font-size: 75px;
 	font-weight: bold;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 #headerwrap h2 {
+	margin-top: 10px;
 	width: 100%;
 }
 
@@ -137,10 +146,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', Lato;
 	font-size: 25px;
 	font-weight: bold;
-}
-
-#headerwrap i:hover {
-  color: #CCFF99
 }
 
 #headerwrap h5 {
@@ -158,6 +163,15 @@ h1, h2, h3, h4, h5, h6 {
 	width: 900px;
 }
 
+.title-wrap img {
+	height: 180px;
+	width: 180px;
+}
+
+.title {
+	text-align: left;
+}
+
 .how-it-works-wrap {
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
@@ -168,11 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-media i {
-	color: #4a4a4a
-}
-
-.social-media i:hover {
-	color: #1abc9c
+	font-size: 50px;
 }
 
 #footerwrap {
@@ -196,15 +206,21 @@ a:hover {
 }
 
 #footerwrap a:hover {
-    color: #CCFF99
+    color: #e31e26;
 }
 
 #footerwrap i:hover {
-    color: #CCFF99
+    color: #e31e26;
 }
 
-#footerwrap i {
-	color: #f2f2f2;
+#footerwrap .copyright {
+	margin-top: 18px;
+	text-align: left;
+}
+
+#footerwrap .links {
+	margin-top: 18px;
+	text-align: right;
 }
 
 #workwrap {	
@@ -287,7 +303,7 @@ a:hover {
 	opacity: 0.4;
 }
 
-/*MailChimp*/
+/* MailChimp */
 #mc_embed_signup {
 	clear: left;
 	font-size: 14px;
@@ -295,6 +311,7 @@ a:hover {
 
 #mc_embed_signup input.email {
 	border-radius: 5px;
+	color: #333333;
 	font-family: 'Ubuntu', Lato;
 	font-size: 20px;
 	margin: auto !important;
@@ -318,7 +335,76 @@ a:hover {
 	background: #bb171e !important;
 }
 
+/* Responsiveness */
+@media(min-width: 768px) and (max-width: 991px) {
+	#headerwrap h1 {
+		font-size: 60px;
+		margin-top: 23px;
+	}
+	#headerwrap h2 {
+		font-size: 25px;
+	}
+	#headerwrap h4 {
+		font-size: 20px;
+	}
+	.title-wrap {
+		width: 700px;
+	}
+	.title-wrap img {
+		height: 150px;
+		width: 150px;
+	}
+	#footerwrap .copyright,
+	#footerwrap .links {
+		margin-top: 10px;
+	}
+
+	.social-media i {
+		font-size: 40px;
+	}
+}
+
 @media (max-width: 767px) {
+	#headerwrap h1 {
+		font-size: 60px;
+		margin-top: 20px;
+	}
+	#headerwrap h2 {
+		font-size: 23px;
+	}
+	#headerwrap h4 {
+		font-size: 20px;
+	}
+	.title-wrap {
+		width: 100%;
+	}
+	.title-wrap img {
+		height: 130px;
+		width: 130px;
+	}
+	.title {
+		text-align: center;
+	}
+	.how-it-works-wrap {
+		width: 100%;
+	}
+	#footerwrap p {
+		width: 100%;
+	}
+	#footerwrap .copyright {
+		margin-top: 0;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	#footerwrap .links {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.social-media i {
+		font-size: 40px;
+	}
+
 	#mc_embed_signup input.email,
 	#mc_embed_signup input.button {
 		width: 100% !important;
