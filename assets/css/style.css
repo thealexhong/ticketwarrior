@@ -159,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 50px;
 	padding: 20px;
 	width: 900px;
 }
@@ -197,19 +198,15 @@ h1, h2, h3, h4, h5, h6 {
 	margin: auto;
 }
 
-a {
-    color: #ffffff;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-#footerwrap a:hover {
+#footerwrap a:hover,
+#footerwrap a:active,
+#footerwrap a:focus {
     color: #e31e26;
 }
 
-#footerwrap i:hover {
+#footerwrap i:hover,
+#footerwrap i:active,
+#footerwrap i:focus {
     color: #e31e26;
 }
 
@@ -348,6 +345,7 @@ a:hover {
 		font-size: 20px;
 	}
 	.title-wrap {
+		margin-top: 40px;
 		width: 700px;
 	}
 	.title-wrap img {
@@ -376,6 +374,7 @@ a:hover {
 		font-size: 20px;
 	}
 	.title-wrap {
+		margin-top: 25px;
 		width: 100%;
 	}
 	.title-wrap img {
