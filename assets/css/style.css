@@ -5,12 +5,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 ::-moz-selection {
-    background: #f2c2c9;
+    background: #BA9EB0;
     text-shadow: none;
 }
 
 ::selection {
-    background: #16a085;
+    background: #BA9EB0;
     text-shadow: none;
 }
 
@@ -81,6 +81,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+a {
+	color: #fff;
+}
+
+a:focus {
+	color: #fff;
+	text-decoration: none;
+}
 .navbar-brand {
 	font-weight: 700;
 	color: #f1c40f;
@@ -198,16 +206,14 @@ h1, h2, h3, h4, h5, h6 {
 	margin: auto;
 }
 
-#footerwrap a:hover,
-#footerwrap a:active,
-#footerwrap a:focus {
+#footerwrap a:hover {
     color: #e31e26;
+    text-decoration: none;
 }
 
-#footerwrap i:hover,
-#footerwrap i:active,
-#footerwrap i:focus {
+#footerwrap i:hover {
     color: #e31e26;
+    text-decoration: none;
 }
 
 #footerwrap .copyright {
