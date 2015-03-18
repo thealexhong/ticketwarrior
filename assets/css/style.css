@@ -333,6 +333,66 @@ a:hover {
 	background: #bb171e !important;
 }
 
+.faq-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.faq-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.faq-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.faq-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.faq-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.faq-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.faq-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.faq-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 /* Responsiveness */
 @media(min-width: 768px) and (max-width: 991px) {
 	#headerwrap {
