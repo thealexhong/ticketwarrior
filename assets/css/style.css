@@ -91,6 +91,12 @@ h1, h2, h3, h4, h5, h6 {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
+@-moz-document url-prefix() {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 400;
+	}
+}
+
 a {
 	color: #fff;
 }
@@ -190,6 +196,12 @@ a:hover {
 
 .title-wrap h2 {
 	font-size: 50px;
+}
+
+@-moz-document url-prefix() {
+	#headerwrap h1, .title-wrap h2, .faqwrap h3 {
+		font-weight: 700;
+	}
 }
 
 .title-wrap img {
@@ -333,6 +345,10 @@ a:hover {
 	font-size: 14px;
 }
 
+#mc_embed_signup form {
+	padding-left: 0 !important;
+}
+
 #mc_embed_signup input.email {
 	border-radius: 5px;
 	color: #333333;
@@ -351,9 +367,11 @@ a:hover {
 	color: #fff;
 	font-family: 'Ubuntu', Lato;
 	font-size: 20px;
+	font-weight: 700;
 	height: auto !important;
 	margin: auto !important;
 	padding: 10px !important;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	width: 250px !important;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
