@@ -189,7 +189,7 @@ a:hover {
 }
 
 .title-wrap h2 {
-	font-size: 35px;
+	font-size: 50px;
 }
 
 .title-wrap img {
@@ -237,11 +237,27 @@ a:hover {
 }
 
 #footerwrap a:hover {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#footerwrap a:hover {
     color: #e31e26;
     text-decoration: none;
 }
 
-#footerwrap i:hover {
+#footerwrap .social-media i {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#footerwrap .social-media i:hover {
     color: #e31e26;
     text-decoration: none;
 }
@@ -266,6 +282,10 @@ a:hover {
 	width: 900px;
 }
 
+.faqwrap h3 {
+	margin-bottom: 5px;
+}
+
 .faqwrap p {
 	font-family: 'Ubuntu', Lato;
 	font-size: 20px;
@@ -283,7 +303,8 @@ a:hover {
 	color: #2a6496;
 }
 
-/*.logo {
+/*
+.logo {
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -300,6 +321,7 @@ a:hover {
 	color: transparent;
 }
 */
+
 /* MailChimp */
 #mc_embed_signup {
 	clear: left;
@@ -317,20 +339,27 @@ a:hover {
 	width: 600px !important;
 }
 
-#mc_embed_signup input.button {
+#mc_embed_signup input.button, .modal-body button {
 	background: #e31e26 !important;
 	border: 2px outset #fff;
 	border-radius: 5px;
+	color: #fff;
 	font-family: 'Ubuntu', Lato;
 	font-size: 20px;
 	height: auto !important;
 	margin: auto !important;
 	padding: 10px !important;
 	width: 250px !important;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
-#mc_embed_signup input.button:hover {
+#mc_embed_signup input.button:hover, .modal-body button:hover {
 	background: #bb171e !important;
+	color: #fff;
 }
 
 .faq-modal .modal-content {
@@ -338,7 +367,7 @@ a:hover {
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 1);
     text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
@@ -347,7 +376,6 @@ a:hover {
 
 .faq-modal .modal-content h2 {
     margin: 0;
-    font-size: 3em;
 }
 
 .faq-modal .modal-content img {
@@ -412,7 +440,7 @@ a:hover {
 		width: 700px;
 	}
 	.title-wrap h2 {
-		font-size: 30px !important;
+		font-size: 40px !important;
 	}
 	.title-wrap img {
 		height: 150px;
@@ -432,6 +460,10 @@ a:hover {
 
 	.social-media i {
 		font-size: 40px;
+	}
+
+	.faq-modal .modal-content {
+		padding: 75px 0;
 	}
 }
 
@@ -492,5 +524,9 @@ a:hover {
 	#mc_embed_signup input.email,
 	#mc_embed_signup input.button {
 		width: 100% !important;
+	}
+
+	.faq-modal .modal-content {
+		padding: 25px 0;
 	}
 }
