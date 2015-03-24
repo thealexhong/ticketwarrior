@@ -141,7 +141,7 @@ a:hover {
    ========================================================================== */
 
 #headerwrap {
-	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/background.jpg) no-repeat center top;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/background.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top: 20px;
 	text-align:center;
@@ -167,7 +167,7 @@ a:hover {
 
 #headerwrap h1 {
 	font-size: 75px;
-	margin: 25px 0 10px 0;
+	margin: 15px 0 10px 0;
 }
 
 #headerwrap h2 {
@@ -205,8 +205,8 @@ a:hover {
 }
 
 .title-wrap img {
-	height: 180px;
-	width: 180px;
+	height: 150px;
+	width: 150px;
 }
 
 .title {
@@ -257,7 +257,7 @@ a:hover {
 }
 
 #footerwrap a:hover {
-    color: #e31e26;
+    color: #EFC219;
     text-decoration: none;
 }
 
@@ -270,7 +270,7 @@ a:hover {
 }
 
 #footerwrap .social-media i:hover {
-    color: #e31e26;
+    color: #44889E;
     text-decoration: none;
 }
 
@@ -361,7 +361,7 @@ a:hover {
 }
 
 #mc_embed_signup input.button, .modal-body button {
-	background: #e31e26 !important;
+	background: #2FA557 !important;
 	border: 2px outset #fff;
 	border-radius: 5px;
 	color: #fff;
@@ -381,7 +381,7 @@ a:hover {
 }
 
 #mc_embed_signup input.button:hover, .modal-body button:hover {
-	background: #bb171e !important;
+	background: #168B3E !important;
 	color: #fff;
 }
 
@@ -451,7 +451,7 @@ a:hover {
 	}
 	#headerwrap h1 {
 		font-size: 60px;
-		margin-top: 23px;
+		margin-top: 20px;
 	}
 	#headerwrap h2 {
 		font-size: 25px;
@@ -466,8 +466,8 @@ a:hover {
 		font-size: 40px !important;
 	}
 	.title-wrap img {
-		height: 150px;
-		width: 150px;
+		height: 130px;
+		width: 130px;
 	}
 	#footerwrap, .push {
 		height: 80px;
@@ -496,7 +496,7 @@ a:hover {
 	}
 	#headerwrap h1 {
 		font-size: 60px;
-		margin-top: 20px;
+		margin-top: 15px;
 	}
 	#headerwrap h2 {
 		font-size: 23px;
@@ -511,8 +511,8 @@ a:hover {
 		font-size: 30px !important;
 	}
 	.title-wrap img {
-		height: 130px;
-		width: 130px;
+		height: 110px;
+		width: 110px;
 	}
 	.title {
 		text-align: center;
