@@ -249,7 +249,7 @@ a:hover {
 }
 
 .howItWorksWrap {
-	background: rgba(76, 185, 113, 0.8);
+	background: rgba(22, 139, 62, 0.8);
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 50px;
@@ -328,7 +328,7 @@ a:hover {
 }
 
 #footerWrap .socialMedia i:hover {
-    color: #2C748C;
+    color: #6DAABE;
     text-decoration: none;
 }
 
