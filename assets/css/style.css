@@ -166,7 +166,7 @@ a:hover {
 }
 
 #headerwrap h1 {
-	font-size: 75px;
+	font-size: 65px;
 	margin: 15px 0 10px 0;
 }
 
@@ -191,7 +191,7 @@ a:hover {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px;
-	width: 900px;
+	width: 800px;
 }
 
 .title-wrap h2 {
@@ -205,8 +205,8 @@ a:hover {
 }
 
 .title-wrap img {
-	height: 150px;
-	width: 150px;
+	height: 130px;
+	width: 130px;
 }
 
 .title {
@@ -219,7 +219,7 @@ a:hover {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px;
-	width: 700px;
+	width: 600px;
 }
 
 .how-it-works-wrap h2 {
@@ -450,14 +450,14 @@ a:hover {
 		margin: 0 auto -80px;
 	}
 	#headerwrap h1 {
-		font-size: 60px;
-		margin-top: 20px;
+		font-size: 55px;
+		margin-top: 10px;
 	}
 	#headerwrap h2 {
 		font-size: 25px;
 	}
 	#headerwrap h4 {
-		font-size: 20px;
+		font-size: 21px;
 	}
 	.title-wrap, .faqwrap {
 		width: 700px;
@@ -466,8 +466,11 @@ a:hover {
 		font-size: 40px !important;
 	}
 	.title-wrap img {
-		height: 130px;
-		width: 130px;
+		height: 110px;
+		width: 110px;
+	}
+	.how-it-works-wrap {
+		width: 500px;
 	}
 	#footerwrap, .push {
 		height: 80px;
@@ -495,7 +498,7 @@ a:hover {
 		margin: 0 auto -144px;
 	}
 	#headerwrap h1 {
-		font-size: 60px;
+		font-size: 50px;
 		margin-top: 15px;
 	}
 	#headerwrap h2 {
@@ -511,8 +514,8 @@ a:hover {
 		font-size: 30px !important;
 	}
 	.title-wrap img {
-		height: 110px;
-		width: 110px;
+		height: 90px;
+		width: 90px;
 	}
 	.title {
 		text-align: center;
