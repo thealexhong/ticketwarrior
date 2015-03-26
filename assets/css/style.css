@@ -92,7 +92,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	margin: 0;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
 @-moz-document url-prefix() {
@@ -252,8 +251,8 @@ a:hover {
 	background: rgba(22, 139, 62, 0.8);
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 0px;
+	padding-bottom: 30px;
 	width: 100%;
 }
 
@@ -273,6 +272,23 @@ a:hover {
 
 .howItWorksWrap h2 {
 	margin: 10px 0 10px 0;
+}
+
+.faq {
+	margin: 30px 0 20px 0;
+}
+
+.faq i {
+	font-size: 100px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.faq i:hover {
+    color: #EFC219;
 }
 
 .signUpWrap {
@@ -306,7 +322,7 @@ a:hover {
 	margin: auto;
 }
 
-#footerWrap a:hover {
+#footerWrap a {
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -532,6 +548,11 @@ a:hover {
 	.invHowItWorksWrap {
 		width: 500px;
 	}
+
+	.faq i {
+		font-size: 90px;
+	}
+
 	#footerWrap, .push {
 		height: 80px;
 	}
@@ -566,10 +587,6 @@ a:hover {
 	#headerWrap h4, #fillerWrap h4 {
 		font-size: 20px;
 	}
-	.howItWorksWrap {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
 	.invTitleWrap, .faqWrap {
 		width: 100%;
 	}
@@ -585,6 +602,9 @@ a:hover {
 	}
 	.invHowItWorksWrap {
 		width: 100%;
+	}
+	.faq i {
+		font-size: 80px;
 	}
 	#footerWrap, .push {
 		height: 144px;
