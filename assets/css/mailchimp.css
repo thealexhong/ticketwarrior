@@ -90,7 +90,6 @@
 }
 
 /* Responsiveness */
-
 @media(min-width: 768px) and (max-width: 991px) {
 	#mc_embed_signup input.button, .modal-body button {
 		font-size: 21px;
