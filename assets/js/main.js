@@ -27,7 +27,9 @@ function register($form) {
 
       else {
         var message = data.msg;
-        $('#notification_container').html('<span class="success">'+message+'</span>');
+        $('#notification_container').html('<span class="success">'+'Subscribed! Look for the confirmation email'+'</span>');
+        $('#mc_embed_signup').hide();
+        $('#shareTwitter').show();
       }
     }
   });
