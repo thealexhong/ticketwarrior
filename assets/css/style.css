@@ -96,6 +96,7 @@ a {
 }
 a:focus {
 	color: #fff;
+	text-decoration: none;
 }
 a:hover {
     color: #F6EB2B;
