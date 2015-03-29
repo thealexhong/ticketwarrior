@@ -425,52 +425,6 @@ a:hover {
 }
 */
 
-/* MailChimp */
-#mc_embed_signup {
-	clear: left;
-	font-size: 14px;
-}
-
-#mc_embed_signup form {
-	padding-left: 0 !important;
-}
-
-#mc_embed_signup input.email {
-	border-radius: 5px;
-	color: #333333;
-	font-family: 'Ubuntu', Lato;
-	font-size: 20px;
-	margin: auto !important;
-	margin-bottom: 10px !important;
-	text-indent: 10px !important;
-	width: 600px !important;
-}
-
-#mc_embed_signup input.button, .modal-body button {
-	background: #fff !important;
-	border: 4px outset #000;
-	border-radius: 5px;
-	color: #000;
-	font-family: 'Ubuntu', Lato;
-	font-size: 24px;
-	font-weight: 700;
-	height: auto !important;
-	margin: auto !important;
-	padding: 10px !important;
-	width: 250px !important;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-#mc_embed_signup input.button:hover, .modal-body button:hover {
-	background: #F62B2B !important;
-	border: 4px outset #000;
-	color: #fff;
-}
-
 .faq-modal .modal-content {
     padding: 30px 0;
     min-height: 100%;
@@ -578,9 +532,6 @@ a:hover {
 	.socialMedia i {
 		font-size: 40px;
 	}
-	#mc_embed_signup input.button {
-		font-size: 21px;
-	}
 	.faq-modal .modal-content {
 		padding: 20px 0;
 	}
@@ -650,12 +601,6 @@ a:hover {
 
 	.socialMedia i {
 		font-size: 40px;
-	}
-
-	#mc_embed_signup input.email,
-	#mc_embed_signup input.button {
-		font-size: 20px;
-		width: 100% !important;
 	}
 
 	.faq-modal .modal-content {
