@@ -32,7 +32,7 @@ function register($form) {
         $('#shareTwitter').show();
 
         var email = document.getElementById("mce-EMAIL").value;
-        var emailTemplate = '<div style="background:#f6eb2b; color:#000; font-family:Arial; text-align:center; text-decoration:none"><a href="http://ticketwarrior.me" style="color:#000; font-weight:700; text-decoration:none;"><div style="font-size:75px; padding-top:20px">Ticket Warrior</div><div style="font-size:24px; padding-bottom:20px;">Saving the world one parking ticket at a time</div></a><div style="font-size:18px; font-weight:400; margin:auto; max-width:600px; padding-top:20px; text-align:left">We here at the Ticket Warrior office are super excited to be launching our application to help you fight your parking tickets.<br><br>Until then, share us on Twitter to gain priority access! If you <a href="http://ctt.ec/04Gpi" style="color: #428bca; font-weight:700;">click here to tweet us</a>, we will give you priority access and as a bonus give you <span style="font-weight:700;">10% off</span> the first time you use our service!<br><br>Sincerely,<br><br><div style="font-weight:700;">Your Warriors</div></div><br><br><div style="border-top:1px solid black; font-size:16px; font-weight:400; padding:20px 0; text-align:center;"><a href="http://twitter.com/ticketwarriorme" target="_blank" style="color:#000; font-weight:400; padding:15px 0; text-align:center;"><img style="width:50px;" src="http://ticketwarrior.me/assets/img/twitter.png"></a><br><span>&copy; 2015 Ticket Warrior</span><br></div></div>';
+        var emailTemplate = '<div style="background:#f6eb2b; color:#000; font-family:Arial; text-align:center; text-decoration:none"><a href="http://ticketwarrior.me" style="color:#000; font-weight:700; text-decoration:none;"><div style="font-size:75px; padding-top:20px">Ticket Warrior</div><div style="font-size:24px; padding-bottom:20px;">Saving the world one parking ticket at a time</div></a><div style="font-size:18px; font-weight:400; margin:auto; max-width:600px; padding-top:20px; text-align:left">We here at the Ticket Warrior office are super excited to be launching our application to help you fight your parking tickets.<br><br>Until then, share us on Twitter to gain priority access! If you <a href="http://ctt.ec/04Gpi" style="color: #428bca; font-weight:700;">click here to tweet us</a>, we will give you priority access and as a bonus give you <span style="font-weight:700;">10% off</span> the first time you use our service!<br><br>Sincerely,<br><br><div style="font-weight:700;">Your Warriors</div></div><br><br><br><div style="background-color:#333333; border-top:1px solid black; font-size:16px; font-weight:400; padding:20px 0; text-align:center;"><a href="http://twitter.com/ticketwarriorme" target="_blank" style="color:#000; font-weight:400; text-align:center;"><img src="http://ticketwarrior.me/assets/img/twitter.png" style="padding-bottom:10px; width:50px;"></a><br><span style="color:#ffffff">&copy; 2015 Ticket Warrior</span><br></div></div>';
 
         $.ajax({
           type: 'POST',
@@ -49,7 +49,7 @@ function register($form) {
                   }
                 ],
               'autotext': 'true',
-              'subject': 'Thanks for signing up',
+              'subject': 'We fight your tickets so you don\'t have to',
               'html': emailTemplate
             }
           }
