@@ -279,8 +279,8 @@ a:hover {
 }
 
 .faq h2 {
-	color:#000;
-	font-size:34px;
+	color: #000;
+	font-size: 34px;
 }
 
 .faq i {
@@ -556,7 +556,9 @@ a:hover {
 	.invHowItWorksWrap {
 		width: 500px;
 	}
-
+	.faq h2 {
+		font-size: 31px !important;
+	}
 	.faq i {
 		font-size: 90px;
 	}
@@ -576,7 +578,9 @@ a:hover {
 	.socialMedia i {
 		font-size: 40px;
 	}
-
+	#mc_embed_signup input.button {
+		font-size: 21px;
+	}
 	.faq-modal .modal-content {
 		padding: 20px 0;
 	}
@@ -611,8 +615,18 @@ a:hover {
 	.invHowItWorksWrap {
 		width: 100%;
 	}
+	.faq {
+		margin: 20px 0 20px 0;
+	}
+	.faq h2 {
+		font-size: 30px !important;
+	}
 	.faq i {
 		font-size: 80px;
+	}
+	.signUpWrap {
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	#footerWrap, .push {
 		height: 144px;
@@ -640,6 +654,7 @@ a:hover {
 
 	#mc_embed_signup input.email,
 	#mc_embed_signup input.button {
+		font-size: 20px;
 		width: 100% !important;
 	}
 
