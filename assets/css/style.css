@@ -80,7 +80,7 @@ html, body {
 }
 
 body {
-    color: #fff;
+    color: #000;
     font-family: 'Ubuntu', Lato;
     font-weight: 400;
     font-size: 16px;
@@ -106,11 +106,10 @@ a {
 
 a:focus {
 	color: #fff;
-	text-decoration: none;
 }
 
 a:hover {
-    color: #e8e53d;
+    color: #F6EB2B;
     text-decoration: none;
 }
 
@@ -145,7 +144,8 @@ a:hover {
 
 #headerWrap {
 	/*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/background.jpg) no-repeat center top;*/
-	background: url(../img/background.png) no-repeat center top;
+	/*background: url(../img/background.png) no-repeat center top;*/
+	background: rgba(246, 235, 43, 1);
 	margin-top: 0px;
 	text-align:center;
 	background-attachment: relative;
@@ -170,7 +170,7 @@ a:hover {
 }
 
 #fillerWrap {
-	background: rgba(68, 136, 158, 1);
+	background: rgba(246, 235, 43, 1);
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
@@ -204,11 +204,11 @@ a:hover {
 #headerWrap h5 {
   font-weight: 400;
   padding-bottom: 15px;
-  color: #ffffff
+  color: #000
 }
 
 .titleWrap {
-	background: rgba(0, 0, 0, 0.8);
+	/*background: rgba(0, 0, 0, 0.8);*/
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
@@ -244,15 +244,15 @@ a:hover {
 }
 
 .title {
-	text-align: left;
+	text-align: center;
 }
 
 .howItWorksWrap {
-	background: rgba(22, 139, 62, 0.8);
+	/*background: rgba(22, 139, 62, 0.8);*/
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 0px;
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 	width: 100%;
 }
 
@@ -275,11 +275,17 @@ a:hover {
 }
 
 .faq {
-	margin: 30px 0 20px 0;
+	margin: 30px 0 30px 0;
+}
+
+.faq h2 {
+	color:#000;
+	font-size:34px;
 }
 
 .faq i {
 	font-size: 100px;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -287,12 +293,17 @@ a:hover {
 	transition: all .3s ease-in-out;
 }
 
+.faq i:focus {
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+}
+
 .faq i:hover {
-    color: #EFC219;
+    color: #22C522;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
 }
 
 .signUpWrap {
-	background: rgba(68, 136, 158, 0);
+	/*background: rgba(68, 136, 158, 0);*/
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 30px;
@@ -307,7 +318,7 @@ a:hover {
 	/* Footer */
 #footerWrap {
 	background-color: #2f2f2f;
-	color: #ffffff;
+	color: #000;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	height: 90px;
@@ -330,8 +341,12 @@ a:hover {
 	transition: all .3s ease-in-out;
 }
 
+#footerWrap a:focus {
+    text-decoration: none;
+}
+
 #footerWrap a:hover {
-    color: #EFC219;
+    color: #F6EB2B;
     text-decoration: none;
 }
 
@@ -344,7 +359,7 @@ a:hover {
 }
 
 #footerWrap .socialMedia i:hover {
-    color: #6DAABE;
+    color: #F6EB2B;
     text-decoration: none;
 }
 
@@ -360,8 +375,6 @@ a:hover {
 
 	/* FAQ */
 .faqWrap {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 5px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px 0 30px 0;
@@ -377,7 +390,6 @@ a:hover {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: normal;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
 .faqWrap a {
@@ -435,17 +447,16 @@ a:hover {
 }
 
 #mc_embed_signup input.button, .modal-body button {
-	background: #FF2800 !important;
-	border: 2px outset #fff;
+	background: #fff !important;
+	border: 4px outset #000;
 	border-radius: 5px;
-	color: #fff;
+	color: #000;
 	font-family: 'Ubuntu', Lato;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 700;
 	height: auto !important;
 	margin: auto !important;
 	padding: 10px !important;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	width: 250px !important;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
@@ -455,7 +466,8 @@ a:hover {
 }
 
 #mc_embed_signup input.button:hover, .modal-body button:hover {
-	background: #9B1800 !important;
+	background: #F62B2B !important;
+	border: 4px outset #000;
 	color: #fff;
 }
 
@@ -464,7 +476,7 @@ a:hover {
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(246, 235, 43, 1);
     text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
@@ -495,10 +507,6 @@ a:hover {
     height: 75px;
     background-color: transparent;
     cursor: pointer;
-}
-
-.faq-modal .close-modal:hover {
-    opacity: .3;
 }
 
 .faq-modal .close-modal .lr {
