@@ -50,6 +50,9 @@
 	color: #2a6496;
 }
 
+.faq-modal {
+	padding-left: 0 !important;
+}
 .faq-modal .modal-content {
     padding: 30px 0;
     min-height: 100%;

@@ -30,6 +30,32 @@ function register($form) {
         $('#notification_container').html('<span class="success">'+'Subscribed! Look for the confirmation email'+'</span>');
         $('#mc_embed_signup').hide();
         $('#shareTwitter').show();
+
+        var email = document.getElementById("mce-EMAIL").value;
+        var emailTemplate = '<div style="background:#f6eb2b; color:#000; font-family:Arial; text-align:center; text-decoration:none"><a href="http://ticketwarrior.me" style="color:#000; font-weight:700; text-decoration:none;"><div style="font-size:75px; padding-top:20px">Ticket Warrior</div><div style="font-size:24px; padding-bottom:20px;">Saving the world one parking ticket at a time</div></a><div style="font-size:18px; font-weight:400; margin:auto; max-width:600px; padding-top:20px; text-align:left">We here at the Ticket Warrior office are super excited to be launching our application to help you fight your parking tickets.<br><br>Until then, share us on Twitter to gain priority access! If you <a href="http://ctt.ec/04Gpi" style="color: #428bca; font-weight:700;">click here to tweet us</a>, we will give you priority access and as a bonus give you <span style="font-weight:700;">10% off</span> the first time you use our service!<br><br>Sincerely,<br><br><div style="font-weight:700;">Your Warriors</div></div><br><br><div style="border-top:1px solid black; font-size:16px; font-weight:400; padding:20px 0; text-align:center;"><a href="http://twitter.com/ticketwarriorme" target="_blank" style="color:#000; font-weight:400; padding:15px 0; text-align:center;"><img style="width:50px;" src="http://ticketwarrior.me/assets/img/twitter.png"></a><br><span>&copy; 2015 Ticket Warrior</span><br></div></div>';
+
+        $.ajax({
+          type: 'POST',
+          url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+          data: {
+            'key': 'oqa-pat7REJaqL3bSUS7AA',
+            'message': {
+              'from_email': 'hello@ticketwarrior.me',
+              'from_name': 'Ticket Warrior',
+              'to': [
+                  {
+                    'email': email,
+                    'type': 'to'
+                  }
+                ],
+              'autotext': 'true',
+              'subject': 'Thanks for signing up',
+              'html': emailTemplate
+            }
+          }
+        }).done(function(response) {
+          console.log(response); // if you're into that sorta thing
+        });
       }
     }
   });
