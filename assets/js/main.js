@@ -1,3 +1,4 @@
+// MailChimp
 /** http://stackoverflow.com/a/15120409/477958 **/
 $(function () {
   var $form = $('#mc-embedded-subscribe-form');

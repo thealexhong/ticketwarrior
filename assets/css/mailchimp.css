@@ -22,6 +22,26 @@
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 
 /* Customization */
+#notification_container .alert,
+#notification_container .success {
+	border: none;
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0;
+	margin: auto;
+	padding: 10px 0 0 0;
+	width: 600px
+}
+
+#notification_container .alert {
+	color: #F62B2B;
+}
+
+#notification_container .success {
+	color: #000;
+}
+
 #mc_embed_signup form {
 	padding-left: 0;
 }
@@ -71,6 +91,10 @@
 }
 
 @media (max-width: 767px) {
+	#notification_container .alert,
+	#notification_container .success {
+		width: 100%;
+	}
 	#mc_embed_signup input.email,
 	#mc_embed_signup input.button,
 	.modal-body button {
