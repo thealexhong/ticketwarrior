@@ -304,18 +304,18 @@ a:hover {
     text-decoration: none;
 }
 #footerWrap .copyright {
-	margin-top: 18px;
+	margin-top: 16px;
 	text-align: left;
 }
 #footerWrap .links {
-	margin-top: 18px;
+	margin-top: 16px;
 	text-align: right;
 }
 
 /* Responsiveness */
 @media(min-width: 768px) and (max-width: 991px) {
 	#fillerWrap {
-		margin: 0 auto -80px;
+		margin: 0 auto -90px;
 	}
 
 	#headerWrap h1 {
@@ -344,15 +344,7 @@ a:hover {
 	}
 
 	#footerWrap, .push {
-		height: 80px;
-	}
-	#footerWrap .copyright,
-	#footerWrap .links {
-		margin-top: 10px;
-	}
-
-	.socialMedia i {
-		font-size: 40px;
+		height: 90px;
 	}
 }
 
@@ -399,17 +391,14 @@ a:hover {
 	#footerWrap p {
 		width: 100%;
 	}
-	#footerWrap .copyright {
-		margin-top: 0;
-		margin-bottom: 10px;
-		text-align: center;
-	}
-	#footerWrap .links {
-		margin-top: 10px;
-		text-align: center;
-	}
 
 	.socialMedia i {
 		font-size: 40px;
+		margin: 10px 0;
+	}
+
+	#footerWrap .copyright, #footerWrap .links {
+		margin-top: 0;
+		text-align: center;
 	}
 }
