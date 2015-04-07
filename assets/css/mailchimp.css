@@ -30,17 +30,14 @@
 	font-weight: 700;
 	line-height: normal;
 	margin: 0;
-	margin: auto;
-	padding: 10px 0 0 0;
+	padding: 0;
 	width: 600px;
 }
 #notification_container .alert {
 	color: #F62B2B;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 #notification_container .success {
 	color: #4CF37E;
-	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 }
 
 #shareTwitter {
@@ -48,7 +45,6 @@
 	padding: 10px 0 10px 0;
 }
 #shareTwitter a {
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -57,34 +53,34 @@
 }
 #shareTwitter a:hover {
 	color: #4CF37E;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 }
 
 #mc_embed_signup form {
-	padding-left: 0;
+	padding: 0;
 }
 #mc_embed_signup input.email {
 	border-radius: 5px;
 	color: #333333;
-	font-family: 'Ubuntu', Lato;
+	display: inline;
+	font-family: Lato;
 	font-size: 20px;
-	margin: auto;
-	margin-bottom: 10px;
+	margin: 10px 10px 0 0;
 	text-indent: 10px;
-	width: 600px;
+	width: 380px;
 }
 #mc_embed_signup input.button, .modal-body button {
-	background: #fff;
-	border: 4px outset #000;
+	background: #f0594b;
+	border: 4px outset #ffffff;
 	border-radius: 5px;
-	color: #000;
-	font-family: 'Ubuntu', Lato;
+	color: #ffffff;
+	display: inline;
+	font-family: Lato;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 900;
 	height: auto;
-	margin: auto;
-	padding: 10px;
-	width: 250px;
+	margin-top: 6px;
+	padding: 8px;
+	width: 210px;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -93,20 +89,37 @@
 }
 #mc_embed_signup input.button:hover, .modal-body button:hover {
 	background: #F62B2B;
-	border: 4px outset #000;
-	color: #fff;
+}
+
+.signUpWrap #mc_embed_signup form {
+	text-align: center;
 }
 
 /* Responsiveness */
+@media (min-width: 992px) and (max-width: 1199px) {
+	#mc_embed_signup input.email {
+		width: 330px;
+	}
+	#mc_embed_signup input.button, .modal-body button {
+		font-size: 22px;
+		width: 190px;
+	}
+}
+
 @media(min-width: 768px) and (max-width: 991px) {
+	#mc_embed_signup input.email {
+		width: 280px;
+	}
 	#mc_embed_signup input.button, .modal-body button {
 		font-size: 21px;
+		width: 170px;
 	}
 }
 
 @media (max-width: 767px) {
 	#notification_container .alert,
 	#notification_container .success {
+		text-align: center;
 		width: 100%;
 	}
 
