@@ -96,18 +96,27 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 a:focus {
 	color: #fff;
 	text-decoration: none;
 }
 a:hover {
-    color: rgba(85, 172, 239, 1);
+    color: #449cd6;
     text-decoration: none;
 }
 
+/* Navigation Bar */
 .navbar {
 	background-color: rgba(51, 51, 51, 0.8);
+}
+.navbar-header {
+	width: 100%;
 }
 .navbar-brand {
 	color: #ffffff;
@@ -121,15 +130,18 @@ a:hover {
 	display: inline;
 	height: 45px;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	color: #1abc9c;
-	background-color: transparent;
-	border-bottom: 2px solid #1abc9c
+.navbar i {
+	float: right;
+	font-size: 55px;
+	margin: 5px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
-.navbar-default .navbar-nav > li > a {
-	color: #1abc9c;
+.navbar i:hover {
+    color: #449cd6;
 }
 
 /* Wrap Sections */
@@ -220,10 +232,6 @@ a:hover {
 	width: 1170px;
 }
 
-.titleWrap h2 {
-	font-size: 50px;
-}
-
 @-moz-document url-prefix() {
 	#headerWrap h1, .titleWrap h2, .faqWrap h3 {
 		font-weight: 700;
@@ -240,30 +248,6 @@ a:hover {
 }
 .iphone img {
 	width: 250px;
-}
-
-.howItWorksWrap {
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	width: 100%;
-}
-.howItWorksContainer {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-.invHowItWorksWrap {
-	background: rgba(0, 0, 0, 0);
-	margin-right: auto;
-	margin-left: auto;
-	width: 1170px;
-}
-.howItWorksWrap h2 {
-	color: #000000;
-	margin: 0 0 5px 0;
 }
 
 .signUpWrap {
@@ -310,7 +294,7 @@ a:hover {
     text-decoration: none;
 }
 #footerWrap a:hover {
-    color: #4CF37E;
+    color: #449cd6;
     text-decoration: none;
 }
 #footerWrap .socialMedia i {
@@ -321,7 +305,7 @@ a:hover {
 	transition: all .3s ease-in-out;
 }
 #footerWrap .socialMedia i:hover {
-    color: rgba(85, 172, 239, 1);
+    color: #449cd6;
     text-decoration: none;
 }
 #footerWrap .copyright {
@@ -334,7 +318,6 @@ a:hover {
 }
 
 /* Responsiveness */
-
 @media (min-width: 992px) and (max-width: 1199px) {
 	#headerWrap h1 {
 		font-size: 43px;
@@ -343,8 +326,7 @@ a:hover {
 		font-size: 22px;
 	}
 
-	.invTitleWrap,
-	.invHowItWorksWrap {
+	.invTitleWrap {
 		width: 970px;
 	}
 
@@ -368,8 +350,7 @@ a:hover {
 		font-size: 21px;
 	}
 
-	.invTitleWrap,
-	.invHowItWorksWrap {
+	.invTitleWrap {
 		width: 740px;
 	}
 
@@ -386,12 +367,20 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+	.navbar-header {
+		margin: 0 !important;
+	}
 	.navbar-brand {
 		font-size: 20px;
 	}
 	.navbar-brand img {
 		height: 35px;
 	}
+	.navbar i {
+		font-size: 35px;
+		margin: 10px;
+	}
+
 	#fillerWrap {
 		margin: 0 auto -144px;
 	}
@@ -406,8 +395,7 @@ a:hover {
 		text-align: center;
 	}
 
-	.invTitleWrap,
-	.invHowItWorksWrap {
+	.invTitleWrap {
 		width: 100%;
 	}
 

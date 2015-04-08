@@ -10,13 +10,14 @@ $(function () {
 });
 
 function register($form) {
+  
   $.ajax({
     type: $form.attr('method'),
     url: $form.attr('action'),
     data: $form.serialize(),
     cache       : false,
     dataType    : 'json',
-    contentType: "application/json; charset=utf-8",
+    contentType : "application/json; charset=utf-8",
     error       : function(err) { $('#notification_container').html('<span class="alert">Could not connect to server. Please try again later.</span>'); },
     success     : function(data) {
      
@@ -28,6 +29,7 @@ function register($form) {
       else {
         var message = data.msg;
         $('#notification_container').html('<span class="success">'+'Subscribed! Look for the confirmation email'+'</span>');
+        $('#signUp').hide();
         $('#mc_embed_signup').hide();
         $('#shareTwitter').show();
 
