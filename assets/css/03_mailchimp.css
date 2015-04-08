@@ -126,9 +126,7 @@
 
 @media (max-width: 767px) {
 	#notification_container .alert,
-	#notification_container .success,
-	#notification_container_sec .alert,
-	#notification_container_sec .success {
+	#notification_container .success {
 		text-align: center;
 		width: 100%;
 	}
