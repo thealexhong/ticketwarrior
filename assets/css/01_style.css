@@ -148,13 +148,20 @@ a:hover {
 /* ================================================================================================== */
 #headerWrap {
 	/*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/background.jpg) no-repeat center top;*/
-	background-color: #ffffff;
-	margin-top: 0px;
-	text-align:center;
+	text-align: center;
 	background-attachment: relative;
 	background-position: center center;
-	width: 100%;
 	
+	background-color: #ffffff;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -90px;
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -169,29 +176,6 @@ a:hover {
 	margin: 0;
 	padding: 0 -15px 0 -15px;
 	width: 100%;
-}
-
-#fillerWrap {
-	background: rgba(85, 172, 239, 0.8);
-	margin-right: auto;
-	margin-left: auto;
-	width: 100%;
-
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -90px;
-}
-#fillerWrap .container {
-	margin: 0;
-	padding: 0 -15px 0 -15px;
-	width: 100%;
-}
-
-#fillerWrap h4 {
-	font-size: 24px;
-	margin: 5px 0 8px 0;
-	position: relative;
 }
 
 #headerWrap h1 {
@@ -339,7 +323,7 @@ a:hover {
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
-	#fillerWrap {
+	#headerWrap {
 		margin: 0 auto -90px;
 	}
 
@@ -381,7 +365,7 @@ a:hover {
 		margin: 10px;
 	}
 
-	#fillerWrap {
+	#headerWrap {
 		margin: 0 auto -144px;
 	}
 
@@ -400,7 +384,7 @@ a:hover {
 	}
 
 	.title {
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	.iphoneHidden {
 		text-align: center;
